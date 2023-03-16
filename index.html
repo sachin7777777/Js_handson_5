@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS handson 5</title>
+</head>
+<body>
+    <h3>Q1 = </h3>
+    <pre>
+        const countCharacters = (S) => 
+{
+    let aCount = 0;
+              let dCount = 0;
+            
+              for (let i = 0; i < S.length; i++) {
+                if (S[i] === "A") {
+                  aCount++;
+                } else if (S[i] === "D") {
+                  dCount++;
+                }
+              }
+            
+              return [aCount, dCount];
+};
+    </pre>
+    <h3>Q2 = </h3>
+    <pre>
+        var Count_Occ = (s) => 
+{
+    let count = {};
+                for (let i = 0; i < s.length; i++) {
+                    let char = s.charAt(i);
+                    if (count[char]) {
+                        count[char]++;
+                    } else {
+                        count[char] = 1;
+                    }
+                }
+                let result = "";
+                let keys = Object.keys(count).sort();
+                for (let i = 0; i < keys.length; i++) {
+                    if (count[keys[i]] > 1) {
+                        result += keys[i] + count[keys[i]];
+                    }
+                }
+            
+                return result;
+};
+    </pre>
+    <h3>Q3 = </h3>
+    <pre>
+        var Count_Vowels= (S) => 
+{
+      let count = 0;
+                for(let i=0; i < S.length; i++){
+                  if(S[i]==='a' || S[i]==='e' || S[i]==='i' || S[i]==='o' || S[i]==='u'){
+                    count++;
+                  }
+                }
+                return count;
+};
+    </pre>
+    <h3>Q4 = </h3>
+    <pre>
+        var Concatenate_Strings = (S1, S2) => 
+{
+      return S1.concat('', S2);
+};
+    </pre>
+    <h3>Q5 = Find Length</h3>
+    <pre>
+        Ans:
+        const findLength = (S) => 
+{
+  let count=0;
+  for(let i=0;i<S.length;i++){
+    count++;
+  }
+  return count;
+};
+ 
+    </pre>
+
+    <h3>Q6 = Find the Winner</h3>
+    <pre>
+        var Game_Winner = (S) => 
+{
+   let countA=0;
+  let countD=0;
+  for(let i=0;i<S.length;i++){
+    if(S[i]==='A'){
+      countA+=1;
+      
+    }
+    else{
+      countD+=1;
+    }
+  }
+  if(countA>countD){
+    return "Aditya";
+  }
+  else if(countA<countD){
+    return "Danish";
+  }
+  else{
+    return "Draw"
+  }
+}
+    </pre>
+    <h3>Q7 = Join Strings</h3>
+    <pre>
+        const joinStrings = (S, P) => 
+{
+     let join=S+""+P;
+  return join;
+};
+    </pre>
+    <h3>Q8 = Plaindrome Check</h3>
+    <pre>
+        var Palin_Check = (str) =>
+{
+	  const len = str.length;
+	 for(let i=0;i<len/2;i++){
+	   if(str[i] !== str[len - 1- i]){
+	     return "False";
+	   }
+	 }
+	 return "True";
+}
+    </pre>
+    <h3>Q9 = Reverse the String</h3>
+    <pre>
+        var Reverse_String = (str) => 
+{
+    let revStr='';
+   for(let i=str.length-1;i>=0;i--){
+     revStr+=str[i];
+   }
+   return revStr; 
+};
+ 
+    </pre>
+    <h3>Q10 = Match the Strings</h3>
+    <pre>
+        var String_Match = (S1,S2) => 
+{
+   if(S1===S2) return "YES";
+    return "NO"   
+};
+    </pre>
+    <h3>Q11 = String Replace</h3>
+    <pre>
+        var Replace = (S, pattern , text) => 
+{
+      let S2=S.replace(pattern,text);
+    return S2; 
+};
+ 
+    </pre>
+    <h3>Q12 = Split the String</h3>
+    <pre>
+        var Split_the_string = (S) => 
+{
+ let res=S.split(" ");
+  return res;
+   let ans="";
+   for(let i=0;i<res.length;i++){
+     ans+="\n";
+     ans+=res[i];
+   }
+   return ans;
+        
+};
+    </pre>
+    <h3>Q13 = Count the Vowels and Consonants</h3>
+    <pre>
+        var Count_Vowels= (S) => 
+{
+      let Vcount =0;
+ for(let i =0;i<S.length;i++){
+   if(S[i]==='a'||S[i]==='e'||S[i]==='i'||S[i]==='o'||S[i]==='u')
+   Vcount++;
+ }
+ return Vcount;    
+};
+var Count_Consonants= (S) => 
+{
+       let Ccount =0;
+ for(let i =0;i<S.length;i++){
+   if(S[i]==='b'||S[i]==='c'||S[i]==='d'||S[i]==='f'||S[i]==='g'||S[i]==='h'
+   ||S[i]==='j'||S[i]==='k'||S[i]==='l'||S[i]==='m'||S[i]==='n'||S[i]==='p'
+   ||S[i]==='q'||S[i]==='r'||S[i]==='s'||S[i]==='t'||S[i]==='v'||S[i]==='w'
+   ||S[i]==='x'||S[i]==='y'||S[i]==='z')
+   Ccount++;
+ }
+ return Ccount;    
+};
+    </pre>
+</body>
+</html>
