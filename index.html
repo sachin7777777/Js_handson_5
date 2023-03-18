@@ -75,7 +75,7 @@
         const findLength = (S) => 
 {
   let count=0;
-  for(let i=0;i<S.length;i++){
+  for(let i=0;i< S.length;i++){
     count++;
   }
   return count;
@@ -89,7 +89,7 @@
 {
    let countA=0;
   let countD=0;
-  for(let i=0;i<S.length;i++){
+  for(let i=0;i< S.length;i++){
     if(S[i]==='A'){
       countA+=1;
       
@@ -101,7 +101,7 @@
   if(countA>countD){
     return "Aditya";
   }
-  else if(countA<countD){
+  else if(countA< countD){
     return "Danish";
   }
   else{
@@ -122,7 +122,7 @@
         var Palin_Check = (str) =>
 {
 	  const len = str.length;
-	 for(let i=0;i<len/2;i++){
+	 for(let i=0;i< len/2;i++){
 	   if(str[i] !== str[len - 1- i]){
 	     return "False";
 	   }
@@ -166,7 +166,7 @@
  let res=S.split(" ");
   return res;
    let ans="";
-   for(let i=0;i<res.length;i++){
+   for(let i=0;i< res.length;i++){
      ans+="\n";
      ans+=res[i];
    }
@@ -188,7 +188,7 @@
 var Count_Consonants= (S) => 
 {
        let Ccount =0;
- for(let i =0;i<S.length;i++){
+ for(let i =0;i< S.length;i++){
    if(S[i]==='b'||S[i]==='c'||S[i]==='d'||S[i]==='f'||S[i]==='g'||S[i]==='h'
    ||S[i]==='j'||S[i]==='k'||S[i]==='l'||S[i]==='m'||S[i]==='n'||S[i]==='p'
    ||S[i]==='q'||S[i]==='r'||S[i]==='s'||S[i]==='t'||S[i]==='v'||S[i]==='w'
